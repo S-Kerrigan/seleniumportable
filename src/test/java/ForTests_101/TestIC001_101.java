@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -17,7 +16,6 @@ public class TestIC001_101 {
 
 	private WebDriver driver;
 	private FirefoxProfile profile;
-	private DesiredCapabilities capabilities;
 
 	private String driverPath;
 	private String distrPath;
@@ -28,7 +26,6 @@ public class TestIC001_101 {
 		distrPath       = System.getenv("DistrPath");
 
 		profile         = new FirefoxProfile();
-		capabilities    = DesiredCapabilities.firefox();
 
 		System.setProperty("webdriver.gecko.driver", driverPath);
 
