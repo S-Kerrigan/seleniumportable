@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AST.101">
+    <parameter name="Package" value="ForTests_101"/>
+    <test name="ForTests_101">
+        <classes>
+            <class name="ForTests_101.TestIC001_101"/>
+        </classes>
+    </test>
+</suite>
